@@ -5,8 +5,8 @@ from dacite import from_dict
 @dataclass
 class Position:
 
-    x: int = field(default=554)
-    y: int = field(default=581)
+    x: int = field(default=None)
+    y: int = field(default=None)
 
     @classmethod
     def from_dict(cls, data: Dict[str, Any]) -> "Position":

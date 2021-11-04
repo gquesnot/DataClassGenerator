@@ -5,9 +5,9 @@ from dacite import from_dict
 @dataclass
 class Event:
 
-    realTimestamp: int = field(default=1635796811348)
-    timestamp: int = field(default=0)
-    type: str = field(default="PAUSE_END")
+    realTimestamp: int = field(default=None)
+    timestamp: int = field(default=None)
+    type: str = field(default=None)
 
     @classmethod
     def from_dict(cls, data: Dict[str, Any]) -> "Event":

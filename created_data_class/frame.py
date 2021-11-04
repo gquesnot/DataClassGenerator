@@ -9,7 +9,7 @@ class Frame:
 
     events: List[Event]
     participantFrames: Dict[str, ParticipantFrame]
-    timestamp: int = field(default=0)
+    timestamp: int = field(default=None)
 
     @classmethod
     def from_dict(cls, data: Dict[str, Any]) -> "Frame":

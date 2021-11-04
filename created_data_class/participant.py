@@ -5,8 +5,8 @@ from dacite import from_dict
 @dataclass
 class Participant:
 
-    participantId: int = field(default=1)
-    puuid: str = field(default="ZNwHkHel7nDxyki239CvRenMNIjWjl-Rv5C3YdaK1SVj4wcEmsNto2tEqbZRB6AWGmh_Hhg72JL-dg")
+    participantId: int = field(default=None)
+    puuid: str = field(default=None)
 
     @classmethod
     def from_dict(cls, data: Dict[str, Any]) -> "Participant":

@@ -9,8 +9,8 @@ class Info:
 
     frames: List[Frame]
     participants: List[Participant]
-    frameInterval: int = field(default=60000)
-    gameId: int = field(default=5533819036)
+    frameInterval: int = field(default=None)
+    gameId: int = field(default=None)
 
     @classmethod
     def from_dict(cls, data: Dict[str, Any]) -> "Info":

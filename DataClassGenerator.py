@@ -111,7 +111,7 @@ class DataClassGenerator:
                         attrType = "bool"
                         defaultVal = "True" if v else "False"
 
-                    newDefaultStr.append(f"    {k}: {attrType} = field(default={defaultVal})")
+                    newDefaultStr.append(f"    {k}: {attrType} = field(default=None)")
 
             if len(newBaseStr):
                 newClassStr += "\n".join(newBaseStr) + "\n"

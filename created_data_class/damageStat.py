@@ -5,18 +5,18 @@ from dacite import from_dict
 @dataclass
 class DamageStat:
 
-    magicDamageDone: int = field(default=0)
-    magicDamageDoneToChampions: int = field(default=0)
-    magicDamageTaken: int = field(default=0)
-    physicalDamageDone: int = field(default=0)
-    physicalDamageDoneToChampions: int = field(default=0)
-    physicalDamageTaken: int = field(default=0)
-    totalDamageDone: int = field(default=0)
-    totalDamageDoneToChampions: int = field(default=0)
-    totalDamageTaken: int = field(default=0)
-    trueDamageDone: int = field(default=0)
-    trueDamageDoneToChampions: int = field(default=0)
-    trueDamageTaken: int = field(default=0)
+    magicDamageDone: int = field(default=None)
+    magicDamageDoneToChampions: int = field(default=None)
+    magicDamageTaken: int = field(default=None)
+    physicalDamageDone: int = field(default=None)
+    physicalDamageDoneToChampions: int = field(default=None)
+    physicalDamageTaken: int = field(default=None)
+    totalDamageDone: int = field(default=None)
+    totalDamageDoneToChampions: int = field(default=None)
+    totalDamageTaken: int = field(default=None)
+    trueDamageDone: int = field(default=None)
+    trueDamageDoneToChampions: int = field(default=None)
+    trueDamageTaken: int = field(default=None)
 
     @classmethod
     def from_dict(cls, data: Dict[str, Any]) -> "DamageStat":

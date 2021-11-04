@@ -6,8 +6,8 @@ from dacite import from_dict
 class Metadata:
 
     participants: List[str]
-    dataVersion: str = field(default="2")
-    matchId: str = field(default="EUW1_5533819036")
+    dataVersion: str = field(default=None)
+    matchId: str = field(default=None)
 
     @classmethod
     def from_dict(cls, data: Dict[str, Any]) -> "Metadata":
