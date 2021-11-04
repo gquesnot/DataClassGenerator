@@ -2,3 +2,7 @@
 
 Generate data classes recursively in a folder from a json file with a method to instantiate them all with the same type of json file 
 You can see how to use it in the main.py
+
+```
+pip install -r requirements.txt
+```
