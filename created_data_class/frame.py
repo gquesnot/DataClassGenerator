@@ -1,8 +1,10 @@
 from dataclasses import dataclass, field, asdict
 from typing import Any, Union, List, Dict
 from dacite import from_dict
+
 from created_data_class.event import Event
 from created_data_class.participantFrame import ParticipantFrame
+
 
 @dataclass
 class Frame:

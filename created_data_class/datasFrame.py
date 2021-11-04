@@ -1,8 +1,10 @@
 from dataclasses import dataclass, field, asdict
 from typing import Any, Union, List, Dict
 from dacite import from_dict
+
 from created_data_class.metadata import Metadata
 from created_data_class.info import Info
+
 
 @dataclass
 class DatasFrame:

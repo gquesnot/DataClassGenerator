@@ -11,9 +11,9 @@ def ownCapitalize(string):
 
 class DataClassGenerator:
     baseDataClassStr = \
-        "@dataclass\n" + \
+        "\n@dataclass\n" + \
         "class {}:\n\n"
-    headStr = "from dataclasses import dataclass, field, asdict\nfrom typing import Any, Union, List, Dict\nfrom dacite import from_dict\n"
+    headStr = "from dataclasses import dataclass, field, asdict\nfrom typing import Any, Union, List, Dict\nfrom dacite import from_dict\n\n"
     postStr = "    @classmethod\n" \
               "    def from_dict(cls, data: Dict[str, Any]) -> \"{}\":\n" \
               "        return from_dict(cls, data=data)\n\n" \

@@ -2,6 +2,8 @@ from dataclasses import dataclass, field, asdict
 from typing import Any, Union, List, Dict
 from dacite import from_dict
 
+
+
 @dataclass
 class ChampionStat:
 

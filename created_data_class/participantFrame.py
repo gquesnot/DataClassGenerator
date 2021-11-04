@@ -1,9 +1,11 @@
 from dataclasses import dataclass, field, asdict
 from typing import Any, Union, List, Dict
 from dacite import from_dict
+
 from created_data_class.championStat import ChampionStat
 from created_data_class.damageStat import DamageStat
 from created_data_class.position import Position
+
 
 @dataclass
 class ParticipantFrame:
